@@ -6,9 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('task-list', { path: 'tasks' }, function() {
-    this.route('task/new', { path: 'new' });
-    this.route('task');
+  this.resource('task-list', { path: 'tasks' }, function() {
+    this.resource('task/new', { path: 'new' });
+    this.resource('task');
   });
 });
 
