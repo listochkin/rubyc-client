@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('task-list', function() {
+    this.route('task', function() {
+      this.route('new');
+    });
+  });
 });
 
 export default Router;
