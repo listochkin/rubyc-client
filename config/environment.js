@@ -13,6 +13,14 @@ module.exports = function(environment) {
       }
     },
 
+    'simple-auth': {
+      authorizer: 'simple-auth-authorizer:oauth2-bearer',
+      crossOriginWhitelist: ['http://localhost:3000']
+    },
+    'simple-auth-oauth2': {
+      serverTokenEndpoint: 'http://localhost:3000/oauth/token'
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
