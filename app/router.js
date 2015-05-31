@@ -10,6 +10,7 @@ Router.map(function() {
     this.resource('task/new', { path: 'new' });
     this.resource('task');
   });
+  this.route('login');
 });
 
 export default Router;
